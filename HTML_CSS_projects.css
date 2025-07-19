@@ -1,0 +1,209 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+nav{/*ei nav tag hader e use hoy html e jar modhe page er onnanno link jemon home about contact ei link gula rakha hoy*/
+    display: flex;/*flex er madhomme content gulo ke row borabor neya hoy flex use korle jusctify-content:space-around, and aligen-items  use kora jay*/
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(215, 205, 205);
+}
+.manus_container{
+    display: flex;
+    list-style: none;/*etar madhomme kono list style thakbe na*/
+}
+.items{
+    padding: 5px;
+}
+.banner_container{
+    width: 100%;
+    height: 100vh;/*vh vertical hight puro page er modhe 100 hight cover korbe */
+background-image: url("./images/succession-strategy-plannin.jpg"),
+linear-gradient(#A9A9A9); /*ei khane bac-img er sathe , diye aro ekta colour linear-gradient er madhhome add kora hoyeche*/ 
+background-blend-mode:overlay ;/* overlay bac-img and liner-gredieant er color er misron kore background hisebe show korbe*/
+background-position: center;
+background-size: cover;
+margin-top: -5px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: auto;
+text-align: center;
+}
+.btn{
+    padding: 15px 30px;
+    margin-left: 10px;
+}
+.btn-discover{
+    background-color: red;
+    border: none;
+    color: white;
+    text-transform: uppercase; /* sob gulo text upper case e convert hobe*/
+    font-weight: bold;/* font gulo bold hoye jabe*/
+}
+.btn-hire{
+    background-color: white;
+    border: none;
+    color: red;
+    text-transform: uppercase;
+    font-weight: bold;   
+}
+.btn:hover,.title:hover{
+    transform: scale(1.08);/* mouse er carsor rakhle oita 1.08 scale upore uthe asbe*/
+    transition: transform 0.5s ease-in-out;/* eitar madhome tarnsition smooth hobe ja 0.5s time niye upore uthbe and nambe*/
+}
+.title{
+    font-size: 25px;
+}
+.digital{
+    color: red;
+}
+.service-container{
+    padding: 10px;
+    width: 100%;
+    height: 100vh;
+    background-image: url("./images/map.jpg");
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Service{
+    color: red;
+}
+.service-title{
+    color: aliceblue;
+}
+.service-list{
+    padding-left: 100px;
+}
+.servicelist{
+    padding: 15px 30px;
+    border-radius: 20px;
+    border: none;
+    color: rgb(95, 106, 116);
+    font-weight: bold
+}
+.order-list{
+    color: white;
+    list-style-type:disc;
+}
+.service-paragraph{
+    width: 60%;
+    color: white;
+}
+.authore-container{
+    display: flex;
+    align-items: center;
+}
+.profile{
+    width: 65px;
+    height: 65px;
+    border-radius: 50px;
+}
+.profile:hover{
+    transition: transform 0.5s ease-in-out;
+    transform: scale(3.08);
+}
+.authore{
+    display: flex;
+    margin-right: 10px;
+    color: white;
+    border-right: 2px solid red;
+    padding-right: 10px;
+}
+.but{
+   text-transform: uppercase;
+   border: none;
+}
+.paragraph-authore{
+    padding-left: 10px;
+}
+.box-container1{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 15px;
+}
+.img-box1{
+    width: 130px;
+}
+.box1{
+    width: 200px;
+    height: 180px;
+    padding: 20px;
+    box-shadow: 4px 12px 14px gray;/*box e shedow dibe nice 4px side e 12px and alo ta chorabe 14px and alor color hobe gray*/
+    background-color: aliceblue;
+    text-align: center;
+    border-radius: 20px;/*border er kona gulo 20px kore kete jabe onekta round hobe */
+}
+.service-item{
+    margin: auto;/*margin auto nibe*/
+    width: 80%;
+}
+.box1:hover, .box1:active {
+  color:greenyellow;/*carsor rakhle color change hobe*/
+  background-color: rgb(171, 154, 154);/* carsor rakhle backgrouund color eita hobe*/
+  transform: scale(1.08);
+  font-size: 150%;/*carsor rakhle text size 150% boro hoobe*/
+}
+.servicelist:hover,.service-title:hover,.but:hover{
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.08);
+}
+.service-paragraph:hover{
+    box-shadow: 8px 18px 20px black;
+    background-color: rgb(95, 106, 116);
+    padding: 20px;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.08);
+}
+.phone-icon{
+    width: 100px;
+    border-radius: 50px;
+}
+.appoinment-container{
+    display: flex;
+    width: 60%;
+    margin: auto;
+    padding: 5px;
+    align-items: center;
+    background-color: red;
+    border-radius: 15px;
+    color: white;
+    margin-top: -60px;
+}
+.heading{
+    text-transform: uppercase;
+}
+.paragraph{
+    width: 50%;
+    padding-left:30px;
+}
+.appoinment-container:hover{
+    transform: scale(1.08);
+}
+.list1:hover,.list2:hover{
+    transition: transform 0.5s ease-in-out;
+    transform: translate(20px);/*carsor rakhle etar madhomme oi lekhata 20px dane sore jabe */
+    transform: scale(1.08);
+    text-transform: capitalize;
+    font-size: 150%;
+    color: blueviolet;
+}
+.copy-right{
+    padding-left: 550px;
+    font-family: italic;
+}
+.contact{
+     padding-left: 550px;
+    font-family: italic;
+    padding-top:-150px;
+    font-weight: bold;
+}
+/* sobar last kotha ei etosob css na likhe direct css fremwork use kora jay 
+fremwork e sob age thekei build kora thake next project e amra fremwork use kora sikhbo*/
